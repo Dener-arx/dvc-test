@@ -41,3 +41,16 @@ stages:
 
 metrics:
   - eval/metrics.json
+
+
+plots:
+  - recall vs precision:
+      template: linear
+      x: recall
+      y:
+        eval\plots\sklearn\prc\test.json: precision
+  - confusion:
+      template: confusion
+      x: actual
+      y:
+        eval\plots\sklearn\cm\test.json: predicted
