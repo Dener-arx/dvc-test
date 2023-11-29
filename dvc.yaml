@@ -49,8 +49,4 @@ plots:
       x: recall
       y:
         eval\plots\sklearn\prc\test.json: precision
-  - confusion:
-      template: confusion
-      x: actual
-      y:
-        eval\plots\sklearn\cm\test.json: predicted
+
